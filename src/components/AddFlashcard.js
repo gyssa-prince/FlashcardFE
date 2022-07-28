@@ -14,7 +14,7 @@ export default function AddFlashcard() {
           if (createCard.question!='' && createCard.answer!='') {
             create({variables:createCard})
             setTimeout(() => {
-              window.location.reload()
+              window.location.assign("../dashboard")
             }, 2000);
             }
         else{

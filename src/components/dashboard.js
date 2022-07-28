@@ -23,6 +23,9 @@ export default function Dashboard() {
     } 
     if (update != '') {
       UPDATED({variables:update})
+      setTimeout(() => {
+        window.location.reload()
+      }, 2000);
     }
   
   }

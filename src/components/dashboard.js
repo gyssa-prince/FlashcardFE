@@ -16,8 +16,8 @@ export default function Dashboard() {
   const [DELETE]= useMutation(DELETE_FLASHCARD)
   function Update(id){
     let obj = (data.flashcards).find(o => o.id === id);
-    var update ={
-      id:1,
+    const update ={
+      id:id,
       question:document.getElementById('Question'+id).value || obj.question,
       answer:document.getElementById('Answer'+id).value || obj.answer,
     } 
@@ -47,7 +47,7 @@ export default function Dashboard() {
     <>
     <div className='AddPost'><a href='/dashboard/add'><p align="right">Add a post</p></a></div>
     {data && 
-    <div>
+    <div className='Dashboard'>
       <h1>OUR FLASHCARDS</h1>
 
 <table id="fCards">

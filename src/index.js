@@ -9,7 +9,7 @@ import {
 } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3099/graphql',
+  uri: 'https://flashcard-appl.herokuapp.com/graphql',
   cache: new InMemoryCache()
 });
 

@@ -42,7 +42,7 @@ export default function Dashboard() {
 
   return (
     <>
-    <div className='AddPost'><a href='/login/add'><p align="right">Add a post</p></a></div>
+    <div className='AddPost'><a href='/dashboard/add'><p align="right">Add a post</p></a></div>
     {data && 
     <div>
       <h1>OUR FLASHCARDS</h1>

@@ -13,6 +13,9 @@ export default function AddFlashcard() {
           } 
           if (createCard.question!='' && createCard.answer!='') {
             create({variables:createCard})
+            setTimeout(() => {
+              window.location.reload()
+            }, 2000);
             }
         else{
             alert("Fill all inputs!")
@@ -33,7 +36,7 @@ export default function AddFlashcard() {
   <input type="text" id="Answer" placeholder='Something'/><br/><br/>
   <button onClick={()=>CreateCard()}>Submit</button>
   <div className="cancel">
-  <a href='../login'><button>Cancel</button></a>
+  <a href='../dashboard'><button>Cancel</button></a>
   </div>
   </legend>
         </div>
